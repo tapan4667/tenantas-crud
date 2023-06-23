@@ -20,6 +20,7 @@ public class TenantsController {
 	TenantsService ts;
 	@Autowired
 	TenantsValidationController tv;
+	
 
 	@PostMapping("/Tenants")
 	public Tenants insertNewTenants(@RequestBody Tenants t) {
