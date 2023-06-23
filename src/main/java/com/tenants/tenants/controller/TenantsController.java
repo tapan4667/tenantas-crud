@@ -31,6 +31,7 @@ public class TenantsController {
 	@PutMapping("/Tenants")
 	public Tenants updateTenants(@RequestBody Tenants t) {
 		tv.validate(t);
+		System.out.println("tenents controller");
 		return ts.updateTenants(t);
 	}
 
